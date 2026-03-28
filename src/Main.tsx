@@ -68,7 +68,7 @@ const formatCurrency = (amount: number) => {
 const getCategory = (id: number) => CATEGORIES.find(c => c.id === id) || CATEGORIES[CATEGORIES.length - 1];
 
 // --- Main App ---
-export default function App() {
+export default function Main() {
   // State
   const [transactions, setTransactions] = useState<Transaction[]>(() => {
     const saved = localStorage.getItem('hissabi_pro_v2026_react');
