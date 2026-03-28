@@ -6,7 +6,10 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/Moamalati/', // Updated for GitHub Pages repository name
+    base: './', // Added for Jekyll / Static hosting compatibility
+    build: {
+      outDir: 'docs',
+    },
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
