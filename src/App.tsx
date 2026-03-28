@@ -742,6 +742,11 @@ export default function App() {
         )}
       </AnimatePresence>
 
+      {/* Copyright Footer */}
+      <div className="text-center pb-8 pt-4 text-xs text-slate-400 dark:text-slate-500 font-medium" dir="ltr">
+        &copy; حقوق الملكية محفوظة Dabrouzvic 2026
+      </div>
+
     </div>
   );
 }
